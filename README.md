@@ -49,7 +49,7 @@ $ go get -u github.com/tkc/clean-layer-lint
 
 
 ### GitHub Actions Setting
-[int.yml](https://github.com/tkc/clean-layer-lint/blob/master/.github/workflows/lint.yml)
+[lint.yml](https://github.com/tkc/clean-layer-lint/blob/master/.github/workflows/lint.yml)
 
 ```yml
 on: [push, pull_request]
