@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-
 	"github.com/tkc/clean-layer-lint/src/infrastructure"
 	"github.com/tkc/clean-layer-lint/src/interfaces"
 	"golang.org/x/tools/go/analysis/singlechecker"
