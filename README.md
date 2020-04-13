@@ -24,6 +24,7 @@ Checks illegal imported layer. layer order depend on `clean-layer.json` setteing
 $ go get -u github.com/tkc/clean-layer-lint
 ```
 
+
 ## Prepare clean-layer.json
 
 ```json
@@ -47,6 +48,10 @@ $ go get -u github.com/tkc/clean-layer-lint
 |  order  |  your layers order  |
 |  ignore  |  your ignore layoers   |
 
+## Run 
+```bash
+$ clean-layer-lint ./...
+```
 
 ### GitHub Actions Setting
 [lint.yml](https://github.com/tkc/clean-layer-lint/blob/master/.github/workflows/lint.yml)
@@ -79,11 +84,6 @@ jobs:
     - name: lint clean architecture
       run: clean-layer-lint ./...
 ```    
-
-## Run 
-```bash
-$ clean-layer-lint ./...
-```
 
 ## License
 
