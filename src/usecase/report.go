@@ -36,6 +36,9 @@ func (r *report) IsTargetFile(fileName string) bool {
 	if strings.HasSuffix(fileName, "_test.go") {
 		return false
 	}
+	if strings.HasSuffix(fileName, "main.go") {
+		return false
+	}
 	return true
 }
 
