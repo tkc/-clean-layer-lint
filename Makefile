@@ -8,5 +8,5 @@ build:
 	go build -o layer ./main.go
 
 test:
-	go build -o layer ./main.go
-	./layer ./...
+	go build -o clean-layer-lint ./main.go
+	./clean-layer-lint ./...
