@@ -47,9 +47,9 @@ $ go get -u github.com/tkc/clean-layer-lint
 
 |  key  |  description  |
 | :----: | :---- |
-|  path  |  go.mod module name + your layder directory path  |
-|  order  |  your layers order  |
-|  ignore  |  your ignore layoers   |
+|  path  |  go.mod module name + your layer directory path  |
+|  order  |  your layer order  |
+|  ignore  |  your ignore layer   |
 
 ## Run 
 ```bash
