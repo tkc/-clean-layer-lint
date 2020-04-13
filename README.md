@@ -21,7 +21,7 @@ Checks illegal imported layer. layer order depend on `clean-layer.json` setteing
 ## Install
 
 ```bash
-$ go install git@github.com:tkc/clean-layer-lint.git
+$ go get -u github.com/tkc/clean-layer-lint
 ```
 
 ## Prepare clean-layer.json
