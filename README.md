@@ -48,6 +48,38 @@ $ go get -u github.com/tkc/clean-layer-lint
 |  ignore  |  your ignore layoers   |
 
 
+### GitHub Actions Setting
+[int.yml](https://github.com/tkc/clean-layer-lint/blob/master/.github/workflows/lint.yml)
+
+```yml
+on: [push, pull_request]
+name: lint clean architecture
+jobs:
+  test:
+    strategy:
+      matrix:
+        go-version: [1.13.x]
+        platform: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - name: Install Go
+      if: success()
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go-version }}
+    - name: Setup env
+      run: |
+        echo "::set-env name=GOPATH::$(go env GOPATH)"
+        echo "::set-env name=GOBIN::$(go env GOPATH)/bin"
+        echo "::add-path::$(go env GOPATH)/bin"
+    - name: install
+      run: go get -u github.com/tkc/clean-layer-lint   
+    - name: Checkout code
+      uses: actions/checkout@v1
+    - name: lint clean architecture
+      run: clean-layer-lint ./...
+```    
+
 ## Run 
 ```bash
 $ clean-layer-lint ./...
