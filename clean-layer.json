@@ -1,0 +1,10 @@
+{
+   "path": "github.com/tkc/clean-layer-lint/src",
+   "order":[
+       "domain",
+       "usecase",
+       "interfaces",
+       "infrastructure"
+    ],
+    "ignore":[]
+ }
