@@ -18,6 +18,7 @@ Checks illegal imported layer. layer order depend on `clean-layer.json` setteing
 
 ## TODO
 
+- [ ]  example
 - [ ]  Specify files to ignore
 
 ## Install
